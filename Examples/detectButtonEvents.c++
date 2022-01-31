@@ -1,19 +1,15 @@
 #include <Arduino.h>
 #include "buttonManager.h"
 
-
 //Pins:
 #define BUTTON1_PIN D1
 #define BUTTON2_PIN D2
 #define LED1 D3 
 
-
-
 buttonEventManager_t button1ClickEventTracker;
 buttonEventManager_t button1DoubleClickEventTracker;
 buttonEventManager_t button1LongPressEventTracker;
 buttonEventManager_t button2PressEventTracker;
-
 
 void clickAction(void);
 void pressAction(void);
@@ -22,13 +18,11 @@ void doubleClickAction(void);
 void blink(int delayTime);
 void blink2(int delayTime);
 
-
 //------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
 
 void setup() 
 {
-
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, HIGH);
 
@@ -42,7 +36,6 @@ void setup()
   button1LongPressEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
   button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
   button2PressEventTracker->off = HIGH;
-
 }
 
 //------------------------------------------------------------------------------------------
@@ -93,5 +86,4 @@ void doubleClickAction()
 {
   blink(100);
   blink(100);
-
 }
