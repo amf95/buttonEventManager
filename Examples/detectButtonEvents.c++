@@ -46,7 +46,6 @@ void setup()
 }
 
 //------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------
 
 void loop() 
 {
@@ -77,25 +76,22 @@ void blink2(int delayTime)
 
 void longPressAction(void)
 {
-  //blink(500);
-  DEBUG2("L");
+  blink(500);
 }
+
 void pressAction(void)
 {
-  //blink(100);
-  DEBUG2("P");
+  blink(200);
 }
 
 void clickAction()
 {
-  static int counter = 0;
-  //blink2(50);
-  DEBUG2(counter++);
+  blink(50);
 }
 
 void doubleClickAction()
 {
-  //blink2(100);
-  //blink2(100);
-  DEBUG2("D");
+  blink(100);
+  blink(100);
+
 }
