@@ -1,6 +1,18 @@
 #include <Arduino.h>
 #include "buttonManager.h"
 
+typedef struct buttonTrackers_t  //Encapsulated.
+{
+  byte buttonCurrentState;
+  byte buttonPreviousState;
+  uint64_t timeTracker;
+  byte on;
+  byte off;
+  byte buttonPinNumber;
+}
+buttonTrackers_t;
+
+//------------------------------------------------------------------------------------------
 
 void onButtonEvent(buttonEventManager_t button,void (*buttonCallbackFun)(void),byte Event)
 {
@@ -134,4 +146,3 @@ void buttonManagerStateUpdate(buttonEventManager_t button, byte buttonPreviousSt
   button->buttonPreviousState = buttonPreviousState;
   if(timeTracker != NULL){ button->timeTracker = timeTracker;}
 }
-
