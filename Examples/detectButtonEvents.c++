@@ -45,6 +45,8 @@ void loop()
   onButtonEvent(button1ClickEventTracker, clickAction, CLICK);
   onButtonEvent(button1DoubleClickEventTracker, doubleClickAction, DOUBLE_CLICK);
   onButtonEvent(button1LongPressEventTracker, longPressAction, LONG_PRESS);
+  
+  onButtonEvent(button2PressEventTracker, pressAction, PRESS);
 }
 
 //------------------------------------------------------------------------------------------
