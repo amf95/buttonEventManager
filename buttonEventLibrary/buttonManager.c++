@@ -124,7 +124,6 @@ void onButtonEvent(buttonEventManager_t button,void (*buttonCallbackFun)(void),b
   }
 }
 
-//------------------------------------------------------------------------------------------
 
 buttonEventManager_t buttonManagerInit(uint8_t buttonPinNumber,
     uint8_t pinDirection, uint8_t buttonOnPhysicalState){
@@ -148,7 +147,6 @@ buttonEventManager_t buttonManagerInit(uint8_t buttonPinNumber,
   return button;
 }
 
-//------------------------------------------------------------------------------------------
 
 void buttonManagerStateUpdate(buttonEventManager_t button,
     byte buttonPreviousState, byte buttonCurrentState, uint64_t timeTracker){
