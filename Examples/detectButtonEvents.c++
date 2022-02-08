@@ -54,7 +54,6 @@ void loop()
 
 void blink(int delayTime)
 {
-  //Serial.println(button1CurrentState);
   digitalWrite(LED_BUILTIN, LOW);
   delay(delayTime);
   digitalWrite(LED_BUILTIN, HIGH);
