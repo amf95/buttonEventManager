@@ -19,6 +19,7 @@ After adding the library to your project(lib folder for PlatformIO).
 Create buttonEventManager_t instance for each event and you want to listen to per button.
 
 >buttonEventManager_t button1ClickEventTracker;
+>
 >buttonEventManager_t button1DoubleClickEventTracker;
 >
 >buttonEventManager_t button2PressEventTracker;
@@ -63,16 +64,19 @@ Event: enum { PRESS, LONG_PRESS, CLICK , DOUBLE_CLICK, RELEASE }.
 >buttonCallbackFun template takes void parameter and returns void.
 >
 >void myCallbackFunction(void){
+>
 >    //some code here or another funtion... .
 >  
 >}
 >
 >void clickAction(void){
+>
 >    //some code here or another funtion... .
 >  
 >}
 >
 >void doubleClickAction(void){
+>
 >    //some code here or another funtion... .
 >  
 >}
