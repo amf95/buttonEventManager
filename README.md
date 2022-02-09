@@ -22,7 +22,7 @@ If you use "PRESS" event, other events wont work on the same button.
 
 # Use:
 
-After adding the library to your project(lib folder for PlatformIO).
+After adding the library to your project(lib folder for PlatformIO - $USER/Documents/Arduino/libraries/ for Arduino IDE).
 
 Create buttonEventManager_t instance for each event that you want to listen to per button:
 ```c++
