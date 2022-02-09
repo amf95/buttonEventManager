@@ -39,7 +39,7 @@ buttonEventManager_t button2PressEventTracker;
 
 Initialize the instance with **buttonManagerInit(buttonPinNumber, pinDirection, buttonOnPhysicalState)**
 
-- **buttonPinNumber:** physical pin number
+- **buttonPinNumber:** physical pin number.
 - **pinDirection:** **INPUT** | **INPUT_PULLUP** | **INPUT_PULLDOWN**.
 - **buttonOnPhysicalState:** Active **HIGH** | **LOW**.
 
