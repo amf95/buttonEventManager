@@ -33,8 +33,8 @@ buttonEventManager_t button2PressEventTracker;
 Initialize the instance with **buttonManagerInit(buttonPinNumber, pinDirection, buttonOnPhysicalState)**
 
 - **buttonPinNumber:** physical pin number
-- **pinDirection:** INPUT | INPUT_PULLUP | INPUT_PULLDOWN.
-- **buttonOnPhysicalState** Active HIGH | LOW.
+- **pinDirection:** INPUT **|** INPUT_PULLUP **|** INPUT_PULLDOWN.
+- **buttonOnPhysicalState:** Active HIGH **|** LOW.
 
 *returns*: **buttonEventManager_t** pointer.
 
@@ -48,9 +48,9 @@ void setup(){
 }
 ```
 
-# in loop():
+# In loop():
 
-Use **onButtonEvent( buttonEventTracker, buttonCallbackFun, Event)** to set action for each desired event.
+Use **onButtonEvent(buttonEventTracker, buttonCallbackFun, Event)** to set action for each desired event.
 
 - **buttonEventTracker:** the instance that has been initialized in setup().
 - **buttonCallbackFun:** fuction to be called when desired even is detected.
