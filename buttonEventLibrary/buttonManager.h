@@ -27,7 +27,7 @@ struct buttonTrackers_t;//Encapsulated.
 typedef buttonTrackers_t * buttonEventManager_t;
 
 enum BUTTON_STATES {OPEN, DEBOUNCE, PRESS, LONG_PRESS ,
-STUCK, CLICK , DOUBLE_CLICK, RELEASE, TAKE_ACTION};
+    STUCK, CLICK , DOUBLE_CLICK, RELEASE, TAKE_ACTION};
 
 buttonEventManager_t buttonManagerInit(uint8_t buttonPinNumber, 
     uint8_t pinDirection, uint8_t buttonOnPhysicalState);
