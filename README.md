@@ -22,7 +22,7 @@ Create buttonEventManager_t instance for each event and you want to listen to pe
 ```c++
 buttonEventManager_t button1ClickEventTracker;
 buttonEventManager_t button1DoubleClickEventTracker;
-
+int x;
 buttonEventManager_t button2PressEventTracker;
 ```
 
