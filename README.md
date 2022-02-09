@@ -21,11 +21,9 @@ Create buttonEventManager_t instance for each event and you want to listen to pe
 
 ```c++
 buttonEventManager_t button1ClickEventTracker;
-
 buttonEventManager_t button1DoubleClickEventTracker;
 
 buttonEventManager_t button2PressEventTracker;
-
 ```
 
 # In setup():
@@ -38,17 +36,15 @@ buttonOnPhysicalState: Active HIGH | LOW.
 
 returns: buttonEventManager_t pointer.
 
->void setup(){   
->  //all buttons are active LOW here. 
->  
->  button1ClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
->  
->  button1DoubleClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
->  
->  button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
->  
->}
-
+```c++
+void setup(){   
+  //all buttons are active LOW here.   
+  button1ClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
+  button1DoubleClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
+  
+  button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
+}
+```
 
 # in loop():
 
@@ -58,32 +54,28 @@ buttonEventTracker: the instance that has been initialized in setup().
 buttonCallbackFun: fuction to be called when desired even is detected.
 Event: enum { PRESS, LONG_PRESS, CLICK , DOUBLE_CLICK, RELEASE }.
 
->void loop() {
->  onButtonEvent(button1ClickEventTracker, clickAction, CLICK);
->  onButtonEvent(button1DoubleClickEventTracker, doubleClickAction, DOUBLE_CLICK);
->  
->  onButtonEvent(button2PressEventTracker, pressAction, PRESS);
->  
->}
-
+```c++
+void loop() {
+  onButtonEvent(button1ClickEventTracker, clickAction, CLICK);
+  onButtonEvent(button1DoubleClickEventTracker, doubleClickAction, DOUBLE_CLICK);
+  
+  onButtonEvent(button2PressEventTracker, pressAction, PRESS);
+}
+```
 
 # Note:
->buttonCallbackFun template takes void parameter and returns void.
->
->void myCallbackFunction(void){
->
->    //some code here or another funtion... .
->  
->}
->
->void clickAction(void){
->
->    //some code here or another funtion... .
->  
->}
->
->void doubleClickAction(void){
->
->    //some code here or another funtion... .
->  
->}
+buttonCallbackFun template takes void parameter and returns void.
+
+```c++
+void myCallbackFunction(void){
+    //some code here or another funtion... .  
+}
+
+void clickAction(void){
+    //some code here or another funtion... .
+}
+
+void doubleClickAction(void){
+    //some code here or another funtion... .
+}
+```
