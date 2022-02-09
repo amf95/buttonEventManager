@@ -72,7 +72,7 @@ void loop() {
 }
 ```
 
-# Note:
+# buttonCallbackFun:
 buttonCallbackFun template takes void parameter and returns void.
 
 ```c++
@@ -88,3 +88,9 @@ void doubleClickAction(void){
     //some code here or another funtion... .
 }
 ```
+
+# Contribution:
+Anyone is welcomed to fork from the library or edit on it.
+
+# Auther:
+- Ahmed Fawzy [LinkedIn](https://www.linkedin.com/in/ahmed-fawzy-84a998133)
