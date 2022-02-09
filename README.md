@@ -10,7 +10,7 @@ No Blocking as no Delays are used.
 # Notes:
 Better not to use delays nor blocking code in loop() as onButtonEvent() function depends on main loop() to detect events based on time.
 
-If you use "PRESS" event other events wont work on the same button.
+If you use "PRESS" event, other events wont work on the same button.
 
 # Events that can be detected:
 **PRESS, LONG_PRESS, CLICK, DOUBLE_CLICK, RELEASE.**
