@@ -19,9 +19,6 @@ If you use "PRESS" event, other events wont work on the same button.
 - **DOUBLE_CLICK**
 - **RELEASE**
 
-# State Machine Diagrame:
-![button events state machine](https://github.com/amf95/buttonEventManager/blob/main/state_machine/Button_Events_State_Machine.png)
-
 # Use:
 
 After adding the library to your project(lib folder for PlatformIO - $USER/Documents/Arduino/libraries/ for Arduino IDE).
@@ -90,6 +87,9 @@ void doubleClickAction(void){
     //some code here or another funtion... .
 }
 ```
+
+# State Machine Diagrame:
+![button events state machine](https://github.com/amf95/buttonEventManager/blob/main/state_machine/Button_Events_State_Machine.png)
 
 # Contribution:
 Anyone is welcomed to fork from the library or edit on it.
