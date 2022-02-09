@@ -37,7 +37,7 @@ Initialize the instance with **buttonManagerInit(buttonPinNumber, pinDirection, 
 - **pinDirection:** INPUT | INPUT_PULLUP | INPUT_PULLDOWN.
 - **buttonOnPhysicalState** Active HIGH | LOW.
 
-**returns**: **buttonEventManager_t** pointer.
+*returns*: **buttonEventManager_t** pointer.
 
 ```c++
 void setup(){   
