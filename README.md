@@ -19,6 +19,8 @@ If you use "PRESS" event, other events wont work on the same button.
 - **DOUBLE_CLICK**
 - **RELEASE**
 
+# State Machine Diagrame:
+!(button events state machine)[https://github.com/amf95/buttonEventManager/blob/main/state_machine/Button_Events_State_Machine.png]
 
 # Use:
 
