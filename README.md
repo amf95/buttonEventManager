@@ -39,6 +39,7 @@ returns: buttonEventManager_t pointer.
 >  //all buttons are active LOW here. 
 >  
 >  button1ClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
+>  
 >  button1DoubleClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
 >  
 >  button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
