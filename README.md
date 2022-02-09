@@ -31,13 +31,13 @@ buttonEventManager_t button2PressEventTracker;
 
 # In setup():
 
-Initialize the instance with buttonManagerInit(buttonPinNumber, pinDirection, buttonOnPhysicalState)
+Initialize the instance with ***buttonManagerInit(buttonPinNumber, pinDirection, buttonOnPhysicalState)***
 
-buttonPinNumber: physical pin number.
-pinDirection: INPUT | INPUT_PULLUP | INPUT_PULLDOWN.
-buttonOnPhysicalState: Active HIGH | LOW.
+***buttonPinNumber:*** physical pin number.
+***pinDirection:*** INPUT | INPUT_PULLUP | INPUT_PULLDOWN.
+***buttonOnPhysicalState*** Active HIGH | LOW.
 
-returns: buttonEventManager_t pointer.
+***returns: buttonEventManager_t pointer.***
 
 ```c++
 void setup(){   
@@ -51,11 +51,11 @@ void setup(){
 
 # in loop():
 
-Use onButtonEvent( buttonEventTracker, buttonCallbackFun, Event) to set action for each desired event.
+Use ***onButtonEvent( buttonEventTracker, buttonCallbackFun, Event)*** to set action for each desired event.
 
-buttonEventTracker: the instance that has been initialized in setup().
-buttonCallbackFun: fuction to be called when desired even is detected.
-Event: enum { PRESS, LONG_PRESS, CLICK , DOUBLE_CLICK, RELEASE }.
+***buttonEventTracker:*** the instance that has been initialized in setup().
+***buttonCallbackFun:*** fuction to be called when desired even is detected.
+***Event:*** enum { PRESS, LONG_PRESS, CLICK , DOUBLE_CLICK, RELEASE }.
 
 ```c++
 void loop() {
