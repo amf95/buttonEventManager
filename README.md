@@ -2,7 +2,9 @@
 
 # Description:
 This library allows you to detect push button events.
+
 Debounce without the need of external hardware.
+
 No Blocking as no Delays are used.
 
 # Notes:
