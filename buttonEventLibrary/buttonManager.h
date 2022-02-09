@@ -16,32 +16,11 @@
 */
 
 #include <Arduino.h>
+#include "config.h"
 
 #ifndef BUTTON_MANAGER
 #define BUTTON_MANAGER
 
-//Configs:
-
-//Time
-#define BUTTON_DEBONCE_TIME_THRESHOLD 50
-#define BUTTON_RELEASE_TIME 50
-#define BUTTON_LONG_PRESS_LEASE_TIME_THRESHOLD 1500
-#define BUTTON_DOUBLE_CLICK_LEASE_TIME_THRESHOLD 200
-
-//#define D_1
-#define D_2 
-
-#ifdef D_1 
-#define DEBUG(x); Serial.println(x);
-#else  
-#define DEBUG(x);
-#endif
-
-#ifdef D_2 
-#define DEBUG2(x); Serial.println(x);
-#else  
-#define DEBUG2(x);
-#endif
 
 struct buttonTrackers_t;//Encapsulated.
 
