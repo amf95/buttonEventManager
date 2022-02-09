@@ -15,16 +15,18 @@ If you use "PRESS" event other events wont work on the same button.
 
 
 # Use:
+
 After adding the library to your project(lib folder for PlatformIO).
 Create buttonEventManager_t instance for each event and you want to listen to per button.
----c++
+
+```c++
 buttonEventManager_t button1ClickEventTracker;
 
 buttonEventManager_t button1DoubleClickEventTracker;
 
 buttonEventManager_t button2PressEventTracker;
 
----
+```
 
 # In setup():
 
