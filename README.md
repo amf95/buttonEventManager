@@ -26,6 +26,9 @@ After adding the library to your project(lib folder for PlatformIO - $USER/Docum
 
 Create buttonEventManager_t instance for each event that you want to listen to per button:
 ```c++
+#include "buttonManager.h"
+
+
 buttonEventManager_t button1ClickEventTracker;
 buttonEventManager_t button1DoubleClickEventTracker;
 
