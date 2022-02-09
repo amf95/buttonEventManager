@@ -20,7 +20,7 @@ If you use "PRESS" event, other events wont work on the same button.
 - **RELEASE**
 
 # State Machine Diagrame:
-!(button events state machine)[https://github.com/amf95/buttonEventManager/blob/main/state_machine/Button_Events_State_Machine.png]
+!(https://github.com/amf95/buttonEventManager/blob/main/state_machine/Button_Events_State_Machine.png)[button events state machine]
 
 # Use:
 
