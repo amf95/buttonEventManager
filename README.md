@@ -43,6 +43,7 @@ returns: buttonEventManager_t pointer.
 >  button1DoubleClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
 >  
 >  button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
+>  
 >}
 
 
@@ -59,6 +60,7 @@ Event: enum { PRESS, LONG_PRESS, CLICK , DOUBLE_CLICK, RELEASE }.
 >  onButtonEvent(button1DoubleClickEventTracker, doubleClickAction, DOUBLE_CLICK);
 >  
 >  onButtonEvent(button2PressEventTracker, pressAction, PRESS);
+>  
 >}
 
 
