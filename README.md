@@ -73,7 +73,11 @@ void loop() {
 
 # buttonCallbackFun:
 buttonCallbackFun template takes void parameter and returns void.
-
+```c++
+void buttonCallbackFun(void){
+    //some code here or another funtion... .  
+}
+```
 ```c++
 void myCallbackFunction(void){
     //some code here or another funtion... .  
