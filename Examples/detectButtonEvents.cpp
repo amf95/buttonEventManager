@@ -35,7 +35,6 @@ void setup()
   button1DoubleClickEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
   button1LongPressEventTracker = buttonManagerInit(BUTTON1_PIN, INPUT_PULLUP, LOW);
   button2PressEventTracker = buttonManagerInit(BUTTON2_PIN, INPUT_PULLUP, LOW);
-  button2PressEventTracker->off = HIGH;
 }
 
 //------------------------------------------------------------------------------------------
