@@ -18,8 +18,8 @@
 #define BUTTON_LONG_PRESS_LEASE_TIME_THRESHOLD 1500
 #define BUTTON_DOUBLE_CLICK_LEASE_TIME_THRESHOLD 200
 
-//#define D_1
-#define D_2 
+// #define D_1
+// #define D_2 
 
 #ifdef D_1 
 #define DEBUG(x); Serial.println(x);
