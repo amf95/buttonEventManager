@@ -58,7 +58,7 @@ void onButtonEvent(buttonEventManager_t button,void (*buttonCallbackFun)(void),b
         DEBUG("Pressed!");
         buttonManagerStateUpdate(button, PRESS, CLICK, millis());
       }else if ((digitalRead(button->buttonPinNumber) == button->on) 
-          && (millis() - button->timeTracker >= BUTTON_LONG_PRESS_LEASE_TIME_THRESHOLD)){
+          && (millis() - button->timeTracker >= BUTTON_LONG_PRESS_RELEASE_TIME_THRESHOLD)){
         DEBUG("Pressed!");
         buttonManagerStateUpdate(button, PRESS, LONG_PRESS, millis());
       }
@@ -83,11 +83,11 @@ void onButtonEvent(buttonEventManager_t button,void (*buttonCallbackFun)(void),b
 
     case CLICK:
       if((digitalRead(button->buttonPinNumber) == button->off) 
-          && (millis() - button->timeTracker >= BUTTON_DOUBLE_CLICK_LEASE_TIME_THRESHOLD)){
+          && (millis() - button->timeTracker >= BUTTON_DOUBLE_CLICK_RELEASE_TIME_THRESHOLD)){
         DEBUG("Clicked!");
         buttonManagerStateUpdate(button, CLICK, TAKE_ACTION, millis());
       }else if((digitalRead(button->buttonPinNumber) == button->on) 
-          && (millis() - button->timeTracker < BUTTON_DOUBLE_CLICK_LEASE_TIME_THRESHOLD) 
+          && (millis() - button->timeTracker < BUTTON_DOUBLE_CLICK_RELEASE_TIME_THRESHOLD) 
           && (millis() - button->timeTracker >= BUTTON_DEBONCE_TIME_THRESHOLD)){ //debounce second click.
         buttonManagerStateUpdate(button, CLICK, DOUBLE_CLICK, millis());
       }
